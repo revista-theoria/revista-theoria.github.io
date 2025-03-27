@@ -199,29 +199,34 @@ header {
         }
     }
 
-    #destacado .contenedor {
+    /*#destacado .contenedor {
         width: 90%;
-    }
 
-    #numeros .contenedor {
+        a img {
+            width: 70%;
+        }
+    }*/
+
+    /*#numeros .contenedor {
         flex-direction: column;
         align-items: center;
 
         a {
             width: 90%;
         }
-    }
+    }*/
 
-    #destacado .contenedor a img,
     #convocatoria .contenedor img {
-        width: 70%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     #contacto {
         padding: 10px;
 
         p {
-            padding-left: 8%;
+            padding-left: 7%;
             line-height: 1.5;
             font-size: 16px;
         }
