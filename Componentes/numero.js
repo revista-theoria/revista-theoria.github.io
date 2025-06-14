@@ -1,24 +1,39 @@
 class Numero extends HTMLElement {
   static get observedAttributes() {
-    return ['enlace', 'imagen'];
+    return ['enlace', 'imagen', 'numero'];
   }
 
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
+    this.handleClick = this.handleClick.bind(this);
   }
 
   connectedCallback() {
     this.render();
+    this.shadowRoot.querySelector('a').addEventListener('click', this.handleClick);
+  }
+
+  disconnectedCallback() {
+    // Limpiar event listener al eliminar el componente
+    this.shadowRoot.querySelector('a').removeEventListener('click', this.handleClick);
   }
 
   attributeChangedCallback() {
     this.render();
   }
 
+  handleClick(event) {
+    const numero = this.getAttribute('numero');
+    if (numero) {
+      localStorage.setItem('numeroEdicion', numero);
+    }
+  }
+
   render() {
-    const link = this.getAttribute('enlace') || '#';
-    const image = this.getAttribute('imagen') || '';
+    const enlace = 'visualizar.html';
+    const imagen = this.getAttribute('imagen') || '';
+    const numero = this.getAttribute('numero') || '';
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -52,8 +67,8 @@ class Numero extends HTMLElement {
           }
         }
       </style>
-      <a href="${link}" target="_blank">
-        <img src="${image}" alt="Número de revista">
+      <a href="${enlace}" data-numero="${numero}">
+        <img src="${imagen}" alt="Número ${numero} de revista">
       </a>
     `;
   }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theoria</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="Recursos/Favicon (transparente).png">
+    <link rel="icon" type="image/png" href="Recursos/Favicon.png">
 </head>
 <body>
     <header>
@@ -17,9 +17,9 @@
 
 
     <nav id="enlaces" class="seccion">
-        <!--<a href="numeros.html">Archivo</a>-->
+        <a href="archivo.html">Archivo</a>
         <a href="convocatoria.html">Convocatoria</a>
-        <a href="contacto.html">Envío de colaboraciones</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
 
     
@@ -27,7 +27,7 @@
     <section id="contacto" class="seccion">
         <div class="descripcion">
             <p>
-                Agradecemos su interés en nuestra revista.
+                Agradecemos su interés en contactarnos.
             </p>
             <p>
                 Si desea colaborar con nosotros, puede compartirnos su trabajo aquí:
@@ -38,6 +38,30 @@
                 src="https://docs.google.com/forms/d/e/1FAIpQLScjXqIFHEGTI7vLZ9KEuNqXc4FquWSbCsN2GYyyQ9nOd_J9VQ/viewform?embedded=true">
             </iframe>
         </div>
+
+        <div class="descripcion">
+            <p>
+                Si desea preguntarnos algo o adquirir una de nuestras ediciones físicas, puede hacerlo a través del siguiente formulario:
+            </p>
+        </div>
+        <div class="formulario-general">
+            <form id="form" method="POST">
+                <div class="input">
+                    <div>
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <input type="email" name="correo" placeholder="Correo electrónico" required>
+                    </div>
+                </div>
+            
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+            
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="_next" value="https://revista-theoria.github.io/contacto.html">
+            </form>
+        </div>
     </section>
 
 
@@ -45,5 +69,11 @@
     <componente-footer></componente-footer>
 
     <script src="Componentes/footer.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const formulario = document.getElementById("form");
+            formulario.action = `https://formsubmit.co/re.theoria@gmail.com`;
+        });
+    </script>
 </body>
 </html>

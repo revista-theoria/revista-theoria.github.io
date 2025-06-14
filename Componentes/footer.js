@@ -26,13 +26,30 @@ class Footer extends HTMLElement {
             a {
                 color: white;
                 text-decoration: none;
-                transition: color 0.3s;
             }
           }
           
           .copyright {
             font-size: 0.9rem;
             opacity: 0.8;
+          }
+          
+          @media (max-width: 480px) {
+            footer {
+              padding: 1rem;
+            }
+
+            .contenido {
+              gap: 0.5rem;
+
+              a {
+                font-size: 0.8rem;
+              }
+            }
+
+            .copyright  {
+              font-size: 0.8rem;
+            }
           }
         </style>
         

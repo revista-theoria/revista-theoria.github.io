@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Theoria</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/png" href="Recursos/Favicon (transparente).png">
+        <link rel="icon" type="image/png" href="Recursos/Favicon.png">
     </head>
     <body>
       <header>
@@ -16,29 +16,32 @@
 
 
 
-
       <nav id="enlaces" class="seccion">
-        <!--<a href="numeros.html">Archivo</a>-->
+        <a href="archivo.html">Archivo</a>
         <a href="convocatoria.html">Convocatoria</a>
-        <a href="contacto.html">Envío de colaboraciones</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
       
 
 
-
       <section id="destacado" class="seccion">
         <div class="contenedor">
-          <!--<h3>Número más reciente</h3>-->
-          <a>
-            <img src="Recursos/Convocatoria.png">
+          <h3>Número más reciente</h3>
+          <a href="visualizar.html" onClick="guardarNumero(1)">
+            <img src="Recursos/Portadas/1.png" alt="Número de junio de 2025">
           </a>
         </div>
       </section>
-      
+    
 
 
       <componente-footer></componente-footer>
 
       <script src="Componentes/footer.js"></script>
+      <script>
+        function guardarNumero(numero) {
+          localStorage.setItem('numeroEdicion', numero);
+        }
+      </script>
     </body>
 </html>
