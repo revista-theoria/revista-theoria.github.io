@@ -5,7 +5,7 @@ import "../css/Visualizar.css";
 
 function Visualizar() {
     const numeroEdicion = localStorage.getItem('numeroEdicion');
-    const ruta = numeroEdicion ? `Números/${numeroEdicion}.pdf` : '';
+    const ruta = numeroEdicion ? `https://revista-theoria.github.io/Números/${numeroEdicion}.pdf` : '';
 
     return(
         <main>
