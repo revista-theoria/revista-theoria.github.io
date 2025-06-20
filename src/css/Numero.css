@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.numero {
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.numero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .numero {
+    width: 45%;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .numero {
+    width: 90%;
+  }
+}

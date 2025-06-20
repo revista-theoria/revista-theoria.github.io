@@ -1,0 +1,38 @@
+.convocatoria {
+    background-color: #4D6160;
+    margin: auto;
+    padding: 7%;
+    font-size: 20px;
+}
+
+.informacion {
+    padding: 0 15%;
+}
+
+.informacion p, .informacion li {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #E0E0E0;
+    line-height: 1.7;
+}
+
+.informacion li span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .convocatoria .informacion p, li {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .informacion li, .informacion p {
+        font-size: 14px;
+    }
+}

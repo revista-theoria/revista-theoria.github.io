@@ -1,0 +1,36 @@
+#enlaces {
+    background-color: #1F2933;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%
+}
+
+#enlaces p {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #EAEAEA;
+    margin: 0 70px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#enlaces p:hover {
+    color: #8290A7;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 480px) {
+    #enlaces {
+        padding: 3%;
+    }
+    
+    #enlaces p {
+        margin: 0 30px;
+        font-size: 10px;
+    }
+}

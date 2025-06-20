@@ -1,0 +1,20 @@
+.contenedor-visor iframe {
+    width: 100%;
+    height: 700px;
+}
+
+
+
+@media (max-width: 768px) {
+    .contenedor-visor iframe {
+        height: 900px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .contenedor-visor iframe {
+        height: 500px;
+    }
+}

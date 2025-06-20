@@ -1,0 +1,23 @@
+.contenedor-header {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-header img {
+    padding: 4rem;
+    width: 50vw;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 480px) {
+    .contenedor-header {
+        padding: 3%;
+    }
+    
+    .contenedor-header img {
+        width: 100%;
+    }
+}
