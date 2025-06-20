@@ -5,10 +5,21 @@ function Numero({ imagen, numero }) {
     const navigate = useNavigate();
 
     const handleClick = () => {
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        if (isIOS) {
+            window.open(`https://revista-theoria.github.io//Números/${numero}.pdf`, '_blank');
+        }
+        else {
+            localStorage.setItem('numeroEdicion', numero);
+            navigate('/visualizar');
+        }
+
+        /*
         if (numero) {
             localStorage.setItem('numeroEdicion', numero);
             navigate('/visualizar');
         }
+        */
     };
 
     return (
