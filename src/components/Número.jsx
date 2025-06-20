@@ -7,19 +7,12 @@ function Numero({ imagen, numero }) {
     const handleClick = () => {
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
         if (isIOS) {
-            window.open(`https://revista-theoria.github.io//Números/${numero}.pdf`, '_blank');
+            window.open(`https://revista-theoria.github.io/Números/${numero}.pdf`, '_blank');
         }
         else {
             localStorage.setItem('numeroEdicion', numero);
             navigate('/visualizar');
         }
-
-        /*
-        if (numero) {
-            localStorage.setItem('numeroEdicion', numero);
-            navigate('/visualizar');
-        }
-        */
     };
 
     return (

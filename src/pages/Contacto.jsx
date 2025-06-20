@@ -19,6 +19,7 @@ function Contacto() {
                 </div>
                 <div class="formulario">
                     <iframe
+                        title="Formulario para envío de colaboraciones"
                         src="https://docs.google.com/forms/d/e/1FAIpQLScjXqIFHEGTI7vLZ9KEuNqXc4FquWSbCsN2GYyyQ9nOd_J9VQ/viewform?embedded=true"
                     />
                 </div>

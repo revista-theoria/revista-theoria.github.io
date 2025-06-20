@@ -12,7 +12,7 @@ function Visualizar() {
             <Header />
             <Enlaces />
             <div className="contenedor-visor">
-                <iframe src={ruta} />
+                <iframe title="Número" src={ruta} />
             </div>
             <Footer />
         </main>
