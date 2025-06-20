@@ -8,8 +8,15 @@ function Home() {
     const navigate = useNavigate();
 
     const guardarNumero = (numero) => {
-        localStorage.setItem('numeroEdicion', numero);
-        navigate('visualizar');
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) /*|| 
+                    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);*/
+        if (isIOS) {
+            window.open(`https://revista-theoria.github.io/Números/${encodeURIComponent(numero)}.pdf`, '_blank');
+        }
+        else {
+            localStorage.setItem('numeroEdicion', numero);
+            navigate('/visualizar');
+        }
     }
 
     return (
