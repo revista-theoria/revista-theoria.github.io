@@ -6,7 +6,7 @@ function Footer() {
             <footer>
                 <div className="contenido">
                     <a href="https://instagram.com/revista.theoria" target="_blank" rel="noopener noreferrer" alt="Instagram">
-                        <img src="/Instagram.svg" />
+                        <img src="/instagram.svg" />
                     </a>
                     <div className="copyright">
                         © {new Date().getFullYear()} Revista Theoria

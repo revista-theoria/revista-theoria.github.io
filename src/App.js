@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // BrowserRouter para servidores propios
 import Home from "./pages/Home";
 import Archivo from "./pages/Archivo";
 import Convocatoria from "./pages/Convocatoria";
@@ -20,4 +20,3 @@ function App() {
 }
 
 export default App;
-
