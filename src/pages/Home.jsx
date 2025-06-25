@@ -7,15 +7,14 @@ import "../css/Home.css";
 function Home() {
     const navigate = useNavigate();
 
-    const guardarNumero = (numero) => {
+    const visualizar = (numero) => {
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
                     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
         if (isIOS) {
             window.open(`https://revista-theoria.github.io/Números/${encodeURIComponent(numero)}.pdf`, '_blank');
         }
         else {
-            localStorage.setItem('numeroEdicion', numero);
-            navigate('/visualizar');
+            navigate(`/visualizar/${numero}`);
         }
     }
 
@@ -27,7 +26,7 @@ function Home() {
                 <div className="contenedor-destacado">
                     <h3>Número más reciente</h3>
                     <div className="numero">
-                        <img src="Portadas/1.png" alt="Número de junio de 2025" onClick={() => guardarNumero(1)} />
+                        <img src="Portadas/1.png" alt="Número de junio de 2025" onClick={() => visualizar(1)} />
                     </div>
                 </div>
             </div>

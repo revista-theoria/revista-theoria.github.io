@@ -6,7 +6,7 @@ function Header() {
 
     return (
         <div className="contenedor-header">
-            <img src="Logo.png" onClick={() => navigate('/')} alt="Logo" />
+            <img src="/Logo.png" onClick={() => navigate('/')} alt="Logo" />
         </div>
     );
 }

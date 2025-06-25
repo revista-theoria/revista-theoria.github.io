@@ -11,8 +11,7 @@ function Numero({ imagen, numero }) {
             window.open(`https://revista-theoria.github.io/Números/${encodeURIComponent(numero)}.pdf`, '_blank');
         }
         else {
-            localStorage.setItem('numeroEdicion', numero);
-            navigate('/visualizar');
+            navigate(`/visualizar/${numero}`);
         }
     };
 
