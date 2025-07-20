@@ -1,4 +1,4 @@
-.numeros {
+#numeros {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,7 +11,7 @@
 
 
 @media (max-width: 480px) {
-  .numeros {
+  #numeros {
     flex-direction: column;
     align-items: center;
   }

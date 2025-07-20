@@ -22,14 +22,20 @@ function Home() {
         <main>
             <Header />
             <Enlaces />
-            <div className="destacado">
+            <section id="destacado">
                 <div className="contenedor-destacado">
                     <h3>Número más reciente</h3>
                     <div className="numero">
                         <img src="Portadas/1.png" alt="Número de junio de 2025" onClick={() => visualizar(1)} />
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="convocatoria-imagen">
+                <div className="contenedor-convocatoria" onClick={() => window.open("https://forms.gle/wPMUYoaNS9iwVHgB7", '_blank')}>
+                    <img src="Convocatoria.png" alt="Convocatoria para la segunda edición" />
+                </div>
+            </section>
             <Footer />
         </main>
     );

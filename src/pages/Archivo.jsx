@@ -9,9 +9,9 @@ function Archivo() {
         <main>
             <Header />
             <Enlaces />
-            <div className="numeros">
+            <section id="numeros">
                 <Numero imagen="Portadas/1.png" numero="1" />
-            </div>
+            </section>
             <Footer />
         </main>
     );

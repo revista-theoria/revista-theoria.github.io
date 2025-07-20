@@ -8,28 +8,28 @@ function Contacto() {
         <main>
             <Header />
             <Enlaces />
-            <div className="contacto">
+            <section id="contacto">
                 <div className="descripcion">
                     <p>
-                        Agradecemos su interés en contactarnos.
+                        Agradecemos tu interés en contactarnos.
                     </p>
                     <p>
-                        Si desea colaborar con nosotros, puede compartirnos su trabajo aquí:
+                        Si deseas colaborar con nosotros, puedes compartirnos tu trabajo aquí:
                     </p>
                 </div>
-                <div class="formulario">
+                <div className="formulario">
                     <iframe
                         title="Formulario para envío de colaboraciones"
-                        src="https://docs.google.com/forms/d/e/1FAIpQLScjXqIFHEGTI7vLZ9KEuNqXc4FquWSbCsN2GYyyQ9nOd_J9VQ/viewform?embedded=true"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSc-J1w2F4mnPzjHS7wFM8aZi-Bv8D2kpGt3CA4aBt8VoKv6Cg/viewform?embedded=true"
                     />
                 </div>
 
-                <div class="descripcion">
+                <div className="descripcion">
                     <p>
-                        Si desea preguntarnos algo o adquirir una de nuestras ediciones físicas, puede hacerlo a través del siguiente formulario:
+                        Si deseas preguntarnos algo, puedes hacerlo a través del siguiente formulario o enviándonos un mensaje a nuestro Instagram:
                     </p>
                 </div>
-                <div class="formulario-general">
+                <div className="formulario-general">
                     <form id="form" method="POST" action="https://formsubmit.co/re.theoria@gmail.com">
                         <div class="input">
                             <div>
@@ -44,11 +44,11 @@ function Contacto() {
                     
                         <button type="submit">Enviar</button>
 
-                        <input type="hidden" name="_next" value="https://revista-theoria.github.io/contacto" />
+                        <input type="hidden" name="_next" value="revista-theoria.github.io/#/contacto" />
                         <input type="hidden" name="_captcha" value="false" />
                     </form>
                 </div>
-            </div>
+            </section>
             <Footer />
         </main>
     );

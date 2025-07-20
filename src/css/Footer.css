@@ -18,12 +18,17 @@ footer {
     width: 32px;
     height: 32px;
     margin: 0 10px;
+    filter: invert(1);
 }
 
 .copyright {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+
+
+
 
 @media (max-width: 480px) {
     footer {

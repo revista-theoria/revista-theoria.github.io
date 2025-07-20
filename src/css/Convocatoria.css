@@ -1,4 +1,4 @@
-.convocatoria {
+#convocatoria {
     background-color: #4D6160;
     margin: auto;
     padding: 7%;
@@ -7,6 +7,16 @@
 
 .informacion {
     padding: 0 15%;
+}
+
+.informacion .titulo {
+    font-style: italic;
+}
+
+.informacion .detonador {
+    margin: 3% 7%;
+    margin-bottom: 10%;
+    font-weight: 600;
 }
 
 .informacion p, .informacion li {
@@ -24,7 +34,7 @@
 
 
 @media (max-width: 768px) {
-    .convocatoria .informacion p, li {
+    #convocatoria .informacion p, li {
         font-size: 14px;
     }
 }
