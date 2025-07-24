@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // HashRouter en la versión de Github Pages
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // HashRouter en la versión de Github Pages
 import Home from "./pages/Home";
 import Archivo from "./pages/Archivo";
 import Convocatoria from "./pages/Convocatoria";
