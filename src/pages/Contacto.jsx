@@ -16,13 +16,11 @@ function Contacto() {
                     <p>
                         Si deseas preguntarnos algo, puedes enviarnos un correo electrónico a re.theoria@gmail.com o un mensaje a nuestro Instagram: @revista.theoria.
                     </p>
-                </div>
-
-                <div className="descripcion">
                     <p>
                         Si deseas colaborar con nosotros, puedes compartirnos tu trabajo aquí:
                     </p>
                 </div>
+
                 <div className="formulario">
                     <iframe
                         title="Formulario para envío de colaboraciones"

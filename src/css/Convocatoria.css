@@ -42,6 +42,10 @@
 
 
 @media (max-width: 480px) {
+    #convocatoria {
+        padding: 7% 0;
+    }
+
     .informacion li, .informacion p {
         font-size: 14px;
     }

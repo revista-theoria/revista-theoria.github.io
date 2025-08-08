@@ -8,9 +8,9 @@ function Home() {
     const navigate = useNavigate();
 
     const visualizar = (numero) => {
-        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+        const esIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
                     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-        if (isIOS) {
+        if (esIOS) {
             window.open(`https://revista-theoria.github.io/Números/${encodeURIComponent(numero)}.pdf`, '_blank');
         }
         else {
@@ -32,7 +32,7 @@ function Home() {
             </section>
 
             <section id="convocatoria-imagen">
-                <div className="contenedor-convocatoria" onClick={() => window.open("https://forms.gle/wPMUYoaNS9iwVHgB7", '_blank')}>
+                <div className="contenedor-convocatoria" onClick={() => navigate('/convocatoria')}>
                     <img src="Convocatoria.png" alt="Convocatoria para la segunda edición" />
                 </div>
             </section>
